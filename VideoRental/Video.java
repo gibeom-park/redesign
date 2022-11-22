@@ -71,3 +71,4 @@ public class Video {
 		this.videoType = videoType;
 	}
 }
+
