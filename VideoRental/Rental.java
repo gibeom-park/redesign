@@ -30,16 +30,8 @@ public class Rental {
 		return rentDate;
 	}
 
-	public void setRentDate(Date rentDate) {
-		this.rentDate = rentDate;
-	}
-
 	public Date getReturnDate() {
 		return returnDate;
-	}
-
-	public void setReturnDate(Date returnDate) {
-		this.returnDate = returnDate;
 	}
 
 	public int getDaysRentedLimit() {
