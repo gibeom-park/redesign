@@ -21,7 +21,7 @@ public class Rental {
 	}
 
 	public void returnVideo() {
-		if ( status == RentalStatus.RETURNED ) {
+		if ( status == RentalStatus.RENTED ) {
 			this.status = RentalStatus.RETURNED;
 			returnDate = new Date() ;
 		}
