@@ -23,7 +23,8 @@ public class Rental {
 	public void returnVideo() {
 		if ( status == RentalStatus.RENTED ) {
 			this.status = RentalStatus.RETURNED;
-			returnDate = new Date() ;
+			returnDate = new Date();
+			getVideo().returnVideo();
 		}
 	}
 	public Date getRentDate() {
@@ -53,5 +54,9 @@ public class Rental {
 			case Video.DVD: limit = 2 ; break ;
 		}
 		return limit ;
+	}
+	public void printRental(){
+		System.out.print("\tTitle: " + getVideo().getTitle() + " ") ;
+		System.out.print("\tPrice Code: " + getVideo().getPriceCode()) ;
 	}
 }

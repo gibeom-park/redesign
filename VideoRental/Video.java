@@ -51,8 +51,16 @@ public class Video {
 		return rented;
 	}
 
+	public void rentVideo(){
+		setRented(true);
+	}
+
 	public void setRented(boolean rented) {
 		this.rented = rented;
+	}
+
+	public void returnVideo(){
+		setRented(false);
 	}
 
 	public Date getRegisteredDate() {

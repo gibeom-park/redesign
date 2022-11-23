@@ -27,6 +27,11 @@ public class Customer {
 		this.rentals = rentals;
 	}
 
+	public void clearRentals(){
+		List<Rental> rentals = new ArrayList<Rental>() ;
+		setRentals(rentals);
+	}
+
 	public void addRental(Rental rental) {
 		rentals.add(rental);
 
@@ -109,5 +114,9 @@ public class Customer {
 		}
 		daysRented = (int) (diff / (1000 * 60 * 60 * 24)) + 1;
 		return daysRented;
+	}
+
+	public void printCustomer(){
+		System.out.println("Name: " + getName() + "\tRentals: " + getRentals().size()) ;
 	}
 }
