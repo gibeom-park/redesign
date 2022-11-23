@@ -16,10 +16,6 @@ public class Rental {
 		return video;
 	}
 
-	public void setVideo(Video video) {
-		this.video = video;
-	}
-
 	public RentalStatus getStatus() {
 		return status;
 	}
